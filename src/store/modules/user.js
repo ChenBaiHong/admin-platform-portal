@@ -81,35 +81,6 @@ const user = {
     },
 
     /**
-     * 用户 手机号验证 登陆
-     * @param commit
-     * @param userInfo
-     * @returns {Promise<*>}
-     * @constructor
-     */
-    async PhoneLogin ({ commit }, userInfo) {
-      try {
-        let result = await phoneLogin(userInfo)
-        //配置 访问安全 token
-        Vue.ls.set(AUTHORIZATION, result.access_token, result.expires_in * 1000)
-        Vue.ls.set(REFRESH_TOKEN, result.refresh_token, result.expires_in * 1000)
-        commit('SET_TOKEN', result.access_token)
-
-        result = await request.get(api_platf.USER_BY_PHONE_URL, { params: { 'phone': userInfo.phone } })
-        userInfo = result.userInfo
-        Vue.ls.set(USER_INFO, userInfo, 7 * 24 * 60 * 60 * 1000)
-        Vue.ls.set(USER_NAME, userInfo.username, 7 * 24 * 60 * 60 * 1000)
-        commit('SET_INFO', userInfo)
-        commit('SET_NAME', { username: userInfo.username, realname: userInfo.realname, welcome: welcome() })
-        commit('SET_AVATAR', userInfo.avatar)
-
-        return Promise.resolve(result)
-      } catch (error) {
-        return Promise.reject(error)
-      }
-    },
-
-    /**
      * 获取用户权限信息
      * @param commit
      * @param username

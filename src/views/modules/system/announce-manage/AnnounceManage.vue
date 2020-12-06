@@ -237,13 +237,13 @@
           }
         ],
         url: {
-          list: "/api-platf/platform/annountCement/list",
-          delete: "/api-platf/platform/annountCement/delete",
-          deleteBatch: "/api-platf/platform/annountCement/deleteBatch",
-          releaseDataUrl: "/api-platf/platform/annountCement/doReleaseData",
-          reovkeDataUrl: "/api-platf/platform/annountCement/doReovkeData",
-          exportXlsUrl: "/api-platf/platform/annountCement/exportXls",
-          importExcelUrl: "/api-platf/platform/annountCement/importExcel",
+          list: "/api/admin-platform/platform/annountCement/list",
+          delete: "/api/admin-platform/platform/annountCement/delete",
+          deleteBatch: "/api/admin-platform/platform/annountCement/deleteBatch",
+          releaseDataUrl: "/api/admin-platform/platform/annountCement/doReleaseData",
+          reovkeDataUrl: "/api/admin-platform/platform/annountCement/doReovkeData",
+          exportXlsUrl: "/api/admin-platform/platform/annountCement/exportXls",
+          importExcelUrl: "/api/admin-platform/platform/annountCement/importExcel",
         },
       }
     },

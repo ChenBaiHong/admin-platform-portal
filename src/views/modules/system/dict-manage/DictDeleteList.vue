@@ -86,7 +86,7 @@
       },
       loadData(){
         this.loading = true
-        getAction("/api-platf/platform/dict/deleteList").then(res=>{
+        getAction("/api/admin-platform/platform/dict/deleteList").then(res=>{
           this.loading = false
           if(res.success){
             this.dataSource = res.result
@@ -96,7 +96,7 @@
         })
       },
       handleBack(id){
-        putAction("/api-platf/platform/dict/back/"+id).then(res=>{
+        putAction("/api/admin-platform/platform/dict/back/"+id).then(res=>{
           if(res.success){
             this.$message.success(res.message)
             this.loadData();
@@ -106,7 +106,7 @@
         })
       },
       handleDelete(id){
-        deleteAction("/api-platf/platform/dict/deletePhysic/"+id).then(res=>{
+        deleteAction("/api/admin-platform/platform/dict/deletePhysic/"+id).then(res=>{
           if(res.success){
             this.$message.success(res.message)
             this.loadData();

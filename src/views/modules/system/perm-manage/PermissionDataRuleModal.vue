@@ -84,9 +84,9 @@
           ruleColumn: { rules: [] }
         },
         url: {
-          list: '/api-platf/platform/dictItem/list',
-          add: '/api-platf/platform/permission/addPermissionRule',
-          edit: '/api-platf/platform/permission/editPermissionRule'
+          list: '/api/admin-platform/platform/dictItem/list',
+          add: '/api/admin-platform/platform/permission/addPermissionRule',
+          edit: '/api/admin-platform/platform/permission/editPermissionRule'
         },
         showRuleColumn: true
       }

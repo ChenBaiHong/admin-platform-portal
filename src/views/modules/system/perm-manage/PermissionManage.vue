@@ -157,9 +157,9 @@
         // 展开的行，受控属性
         expandedRowKeys: [],
         url: {
-          list: '/api-platf/platform/permission/list',
-          delete: '/api-platf/platform/permission/delete',
-          deleteBatch: '/api-platf/platform/permission/deleteBatch'
+          list: '/api/admin-platform/platform/permission/list',
+          delete: '/api/admin-platform/platform/permission/delete',
+          deleteBatch: '/api/admin-platform/platform/permission/deleteBatch'
         }
       }
     },

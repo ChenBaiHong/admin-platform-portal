@@ -52,7 +52,7 @@
         }],
         activeTabKey: '1',
         url:{
-          datarule:"/api-platf/platform/sysDepartPermission/datarule",
+          datarule:"/api/admin-platform/platform/sysDepartPermission/datarule",
         },
         dataruleList:[],
         dataruleChecked:[]

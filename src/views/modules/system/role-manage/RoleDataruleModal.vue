@@ -54,7 +54,7 @@
         }],
         activeTabKey: '1',
         url:{
-          datarule:"/api-platf/platform/role/datarule",
+          datarule:"/api/admin-platform/platform/role/datarule",
         },
         dataruleList:[],
         dataruleChecked:[]

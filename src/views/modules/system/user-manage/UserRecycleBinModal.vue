@@ -97,7 +97,7 @@
         url: {
           getAvatar: (path) => `window._CONFIG['staticDomainURL']/${path}`,
           // 回收站操作，get = 获取列表；put = 取回；delete = 彻底删除
-          recycleBin: '/api-platf/platform/user/recycleBin',
+          recycleBin: '/api/admin-platform/platform/user/recycleBin',
         },
       }
     },

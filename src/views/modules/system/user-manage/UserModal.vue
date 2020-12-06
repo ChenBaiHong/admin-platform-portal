@@ -249,9 +249,9 @@
         url: {
           fileUpload: window._CONFIG['domianURL'] + '/sys/common/upload',
           imgerver: window._CONFIG['staticDomainURL'],
-          userWithDepart: '/api-platf/platform/user/userDepartList', // 引入为指定用户查看部门信息需要的url
-          userId: '/api-platf/platform/user/generateUserId', // 引入生成添加用户情况下的url
-          syncUserByUserName: '/api-platf/platform/process/extActProcess/doSyncUserByUserName',//同步用户到工作流
+          userWithDepart: '/api/admin-platform/platform/user/userDepartList', // 引入为指定用户查看部门信息需要的url
+          userId: '/api/admin-platform/platform/user/generateUserId', // 引入生成添加用户情况下的url
+          syncUserByUserName: '/api/admin-platform/platform/process/extActProcess/doSyncUserByUserName',//同步用户到工作流
         },
         identity: '1',
         fileList: [],

@@ -165,7 +165,7 @@
 
     },
     methods: {
-      ...mapActions(['Login', 'Logout', 'PhoneLogin']),
+      ...mapActions(['Login', 'Logout']),
 
       /**
        * 登陆账户框规则校验 函数
@@ -203,6 +203,7 @@
               loginParams.password = values.password
               loginParams.validCode = this.inputCodeContent
               loginParams.deviceId = this.deviceId
+              loginParams.grant_type = 'password_code'
               const result = await this.Login(loginParams)
               this.departConfirm(result)
             } else {
@@ -215,7 +216,8 @@
             if (values) {
               loginParams.mobile = values.mobile
               loginParams.captcha = values.captcha
-              const result = await this.PhoneLogin(loginParams)
+              loginParams.grant_type = 'mobile_password'
+              const result = await this.Login(loginParams)
               this.departConfirm(result)
             } else {
               this.loginBtn = false
@@ -273,7 +275,7 @@
       async handleChangeCheckCode () {
         try {
           this.currentDateTime = new Date().getTime()
-          const result = await getAction(`/api-uaa/validate/random-code/${this.deviceId}`)
+          const result = await getAction(`/api/oauth-center/validate/random-code/${this.deviceId}`)
           if (result) {
             this.randCodeImage = result
             this.requestCodeSuccess = true

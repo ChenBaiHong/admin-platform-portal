@@ -4,19 +4,13 @@ import { request } from '@/utils/request'
 import { base64_encode } from '@/utils/base64'
 
 /**
- * login func
- * parameter: {
- *     username: '',
- *     password: '',
- *     remember_me: true,
- *     captcha: '12345'
- * }
+ * 用户登陆
  * @param parameter
  * @returns {*}
  */
 export function login (parameter) {
   return request({
-    url: api_uaa.PASSWORD_LOGIN_PRO_URL,
+    url: api_uaa.OAUTH_TOKEN_URL,
     method: 'post',
     params: parameter,
     headers: {
@@ -25,19 +19,6 @@ export function login (parameter) {
     }
   })
 }
-
-export function phoneLogin (parameter) {
-  return request({
-    url: api_uaa.MOBILE_TOKEN_URL,
-    method: 'post',
-    params: parameter,
-    headers: {
-      'Content-type': 'application/x-www-form-urlencoded',
-      'Authorization': 'Basic ' + base64_encode(CLIENT_ID + ':' + CLIENT_SECRET)
-    }
-  })
-}
-
 /**
  * 获取短信验证码
  * @param parameter

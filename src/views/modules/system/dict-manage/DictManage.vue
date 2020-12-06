@@ -131,11 +131,11 @@
           sm: { span: 19 },
         },
         url: {
-          list: '/api-platf/platform/dict/list',
-          delete: '/api-platf/platform/dict/delete',
-          exportXlsUrl: '/api-platf/platform/dict/exportXls',
-          importExcelUrl: '/api-platf/platform/dict/importExcel',
-          refleshCache: '/api-platf/platform/dict/refleshCache',
+          list: '/api/admin-platform/platform/dict/list',
+          delete: '/api/admin-platform/platform/dict/delete',
+          exportXlsUrl: '/api/admin-platform/platform/dict/exportXls',
+          importExcelUrl: '/api/admin-platform/platform/dict/importExcel',
+          refleshCache: '/api/admin-platform/platform/dict/refleshCache',
         },
       }
     },

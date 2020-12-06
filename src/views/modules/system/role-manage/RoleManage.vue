@@ -164,11 +164,11 @@
           }
         ],
         url: {
-          list: "/api-platf/platform/role/list",
-          delete: "/api-platf/platform/role/delete",
-          deleteBatch: "/api-platf/platform/role/deleteBatch",
-          exportXlsUrl: "/api-platf/platform/role/exportXls",
-          importExcelUrl: "/api-platf/platform/role/importExcel",
+          list: "/api/admin-platform/platform/role/list",
+          delete: "/api/admin-platform/platform/role/delete",
+          deleteBatch: "/api/admin-platform/platform/role/deleteBatch",
+          exportXlsUrl: "/api/admin-platform/platform/role/exportXls",
+          importExcelUrl: "/api/admin-platform/platform/role/importExcel",
         },
       }
     },

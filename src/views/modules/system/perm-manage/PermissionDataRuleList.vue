@@ -108,8 +108,8 @@
         form: this.$form.createForm(this),
         loading: false,
         url: {
-          list: '/api-platf/platform/permission/getPermRuleListByPermId',
-          delete: '/api-platf/platform/permission/deletePermissionRule',
+          list: '/api/admin-platform/platform/permission/getPermRuleListByPermId',
+          delete: '/api/admin-platform/platform/permission/deletePermissionRule',
         },
       }
     },

@@ -127,7 +127,7 @@
           mobile:{rules: [{validator:this.validateMobile}]}
         },
         url: {
-          add: "/api-platf/platform/sysDepart/add",
+          add: "/api/admin-platform/platform/sysDepart/add",
         },
         dictDisabled:true,
       }

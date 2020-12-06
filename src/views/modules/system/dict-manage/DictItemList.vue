@@ -133,9 +133,9 @@
           itemValue: {rules: [{required: true, message: '请输入数据值!'}]},
         },
         url: {
-          list: "/api-platf/platform/dictItem/list",
-          delete: "/api-platf/platform/dictItem/delete",
-          deleteBatch: "/api-platf/platform/dictItem/deleteBatch",
+          list: "/api/admin-platform/platform/dictItem/list",
+          delete: "/api/admin-platform/platform/dictItem/delete",
+          deleteBatch: "/api/admin-platform/platform/dictItem/deleteBatch",
         },
       }
     },

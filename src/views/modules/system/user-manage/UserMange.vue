@@ -264,12 +264,12 @@
 
         ],
         url: {
-          syncUser: '/api-platf/process/extActProcess/doSyncUser',
-          list: '/api-platf/platform/user/list',
-          delete: '/api-platf/platform/user/delete',
-          deleteBatch: '/api-platf/platform/user/deleteBatch',
-          exportXlsUrl: '/api-platf/platform/user/exportXls',
-          importExcelUrl: '/api-platf/platform/user/importExcel'
+          syncUser: '/api/admin-platform/process/extActProcess/doSyncUser',
+          list: '/api/admin-platform/platform/user/list',
+          delete: '/api/admin-platform/platform/user/delete',
+          deleteBatch: '/api/admin-platform/platform/user/deleteBatch',
+          exportXlsUrl: '/api/admin-platform/platform/user/exportXls',
+          importExcelUrl: '/api/admin-platform/platform/user/importExcel'
         },
       }
     },
